@@ -1,0 +1,9 @@
+- name: Deploy GlusterFS cluster
+  hosts: gluster
+  become: True
+  #vars_files:
+  
+  roles:
+    - dmonagha.ufw
+    - dmonagha.glusterfs
+  

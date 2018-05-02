@@ -1,0 +1,15 @@
+---
+- name: Ensure GlusterFS is installed 
+  apt:
+    name:
+    - glusterfs-client
+    - glusterfs-server
+    state: present
+
+- name: Ensure Gluster services are started and enabled
+  service: 
+    name: glusterfs-server 
+    state: started
+    enabled: yes
+
+    
