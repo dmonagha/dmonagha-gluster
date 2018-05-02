@@ -19,7 +19,7 @@ Vagrant.configure(2) do |config|
      vb.memory = "1024"
     end
     
-    # Provision each of the VMs.
+    # Provision each of the VMs for the GlusterFS cluster.
     N = 3
     (1..N).each do |machine_id|
       config.vm.define "gfsn#{machine_id}" do |machine|
