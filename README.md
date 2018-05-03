@@ -18,7 +18,7 @@ Please clone this repo to your local machine.
 
 You will need the following on your local machine:
 * [VirtualBox](https://www.virtualbox.org)
-* [Ansible](https://www.ansible.com)
+* [Ansible](https://www.ansible.com) (version 1.9 or greater)
 * [Vagrant](https://vagrantup.com)
 
 
