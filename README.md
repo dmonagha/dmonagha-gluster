@@ -77,9 +77,9 @@ State: Peer in Cluster (Connected)
 
 Data for your GlusterFS resides in /data/gluster on each node. 
 Simply
- `sudo touch /data/gluster/COMPANY_is_awesome` from any node or to use Ansible to accomplish this on all nodes:
+ `sudo touch /data/gluster/free_as_in_beer` from any node or to use Ansible to accomplish this on all nodes:
 
- `ansible gluster -i hosts -a "touch /data/gluster/COMPANY_is_awesome" -b`
+ `ansible gluster -i hosts -a "touch /data/gluster/free_as_in_beer" -b`
 
  Destroying a sample node can be done with:
 
