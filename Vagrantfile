@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
           # Disable default limit to connect to all the machines.
           ansible.limit = "all"
           # Set inventory and playbook location.
-          ansible.inventory_path = "inventory"
+          ansible.inventory_path = "hosts"
           ansible.playbook = "playbooks/gluster-cluster.yml"
         end
     end
