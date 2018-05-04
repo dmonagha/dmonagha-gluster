@@ -4,7 +4,7 @@ The goal of this exercise was to create a multi-node [GlusterFS](https://docs.gl
 
 This was done by first building several VirtualBox boxes using Vagrant, then handling the remaining configuration of those boxes with several Ansible roles.
 
-I built the boxes by importing an Ubuntu base box, logging into a sample node, manually installing the gluster packages, and then using `ufw` to configure the firewall. 
+I built the boxes by importing an Ubuntu base box, logging into a sample node, manually installing the Gluster packages, and then using `ufw` to configure the firewall. 
 
 Once this was complete I built two separate Ansible roles, one for `ufw` and another for the `gluster` package installation and service enablement.
 
