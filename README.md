@@ -6,7 +6,7 @@ This was done by first building several VirtualBox boxes using Vagrant, then tri
 
 I built the boxes by simply importing an ubuntu base box, then logging into a sample box, manually installing the gluster packages, and then used `ufw` to configure the firewall. 
 
-Once this was complete I built two separate Anisble roles, one for `ufw` and another for the `gluster` package installation and service enablement.
+Once this was complete I built two separate Ansible roles, one for `ufw` and another for the `gluster` package installation and service enablement.
 
 I then built the rest of the playbook to configure the GlusterFS cluster using the Ansible [Gluster_Volume](http://docs.ansible.com/ansible/latest/modules/gluster_volume_module.html) module.
 
