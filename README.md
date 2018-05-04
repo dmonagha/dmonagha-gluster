@@ -24,7 +24,7 @@ You will need the following on your local machine:
 
 ### Installing
 
-After cloning, simple `cd` into playbooks/ and issue `vagrant up`. 
+After cloning, simply `cd` into playbooks/ and issue `vagrant up` 
 
 You should see output similar to the following:
 
@@ -91,9 +91,9 @@ Simply
 
  Destroying a sample node can be done with:
 
-`vagrant destroy gfsn[n]` where `n` is a sample node number.
+`vagrant destroy gfsn[n]` where `n` is a sample node number (without brackets).
 
-To view general volume info:
+To view general Gluster volume info:
 
 `ansible gluster -i hosts -a "gluster volume info" -b`
 
@@ -101,7 +101,7 @@ Additionally, if you are testing operations for volume healing within a cluster:
 
 `ansible gluster -i hosts -a "gluster volume heal gluster info" -b`
 
-If you'd like to test for idempotency:
+If you'd like to test for idempotency, ie re-run the playbook:
 
 `ansible-playbook -i hosts gluster-cluster.yml -b`
 
