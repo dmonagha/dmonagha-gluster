@@ -4,11 +4,13 @@ The goal of this exercise was to create a multi-node [GlusterFS](https://docs.gl
 
 This was done by first building several VirtualBox boxes using Vagrant, then triggering the CM of those boxes with several Ansible roles. 
 
-I built the boxes by simply importing an ubuntu base box, manually installing the gluster packages, and then used `ufw` to configure the firewall on each. 
+I built the boxes by simply importing an ubuntu base box, then logging into a sample box, manually installing the gluster packages, and then used `ufw` to configure the firewall. 
 
-Once this was complete I built two separate Anisble roles, one for `ufw` and another for the gluster package installation and service enablement.
+Once this was complete I built two separate Anisble roles, one for `ufw` and another for the `gluster` package installation and service enablement.
 
 I then built the rest of the playbook to configure the GlusterFS cluster using the Ansible [Gluster_Volume](http://docs.ansible.com/ansible/latest/modules/gluster_volume_module.html) module.
+
+Once this was complete, I configured the Vagrantfile to use the `ansible` provisioner `machine.vm.provision :ansible` after Vagrant was finished creating the last box.
 
 ## Getting Started
 
@@ -24,7 +26,7 @@ You will need the following on your local machine:
 
 ### Installing
 
-After cloning, simply `cd` into playbooks/ and issue `vagrant up` 
+After cloning, simply `cd` into `playbooks/` and issue `vagrant up` 
 
 You should see output similar to the following:
 
