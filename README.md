@@ -26,7 +26,7 @@ You will need the following on your local machine:
 
 ### Installing
 
-After cloning, simply `cd` into `playbooks/` and issue `vagrant up` 
+After installing the prerequisites and cloning the repo, simply `cd` into `playbooks/` and issue `vagrant up` 
 
 You should see output similar to the following:
 
