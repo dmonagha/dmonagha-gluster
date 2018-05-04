@@ -86,8 +86,10 @@ State: Peer in Cluster (Connected)
 ```
 
 Data for your GlusterFS resides in /data/gluster on each node. 
-Simply
- `sudo touch /data/gluster/free_as_in_beer` from any node or to use Ansible to accomplish this on all nodes:
+To test replication across the cluster, `vagrant ssh` into any node and 
+ `sudo touch /data/gluster/free_as_in_beer`
+ 
+ To use Ansible to accomplish this on all nodes:
 
  `ansible gluster -i hosts -a "touch /data/gluster/free_as_in_beer" -b`
 
