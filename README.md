@@ -2,7 +2,7 @@
 
 The goal of this exercise was to create a multi-node [GlusterFS](https://docs.gluster.org/en/latest/) storage cluster with sufficient fault tolerance to survive a single node failure with no loss of data.
 
-This was done by first building several VirtualBox boxes using Vagrant, then triggering the CM of those boxes with several Ansible roles. 
+This was done by first building several VirtualBox boxes using Vagrant, then handling the remaining configuration of those boxes with several Ansible roles.
 
 I built the boxes by importing an Ubuntu base box, logging into a sample node, manually installing the gluster packages, and then using `ufw` to configure the firewall. 
 
