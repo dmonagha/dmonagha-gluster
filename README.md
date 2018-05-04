@@ -86,7 +86,7 @@ State: Peer in Cluster (Connected)
 ```
 
 Data for your GlusterFS resides in /data/gluster on each node. 
-To test replication across the cluster, `vagrant ssh` into any node and 
+To test replication across the cluster, `vagrant ssh` into any node and create some data, such as: 
  `sudo touch /data/gluster/free_as_in_beer`
  
  To use Ansible to accomplish this on all nodes:
